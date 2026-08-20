@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Physical Gym San Juan | Gimnasio en Puerto Rico — Donde se forjan campeones</title>
+<meta name="description" content="Physical Gym en San Juan, Puerto Rico: pesas, máquinas, entrenamiento personalizado, área funcional y suplementos. Gimnasio de barrio con mentalidad de tarima. Llama al 787-765-6561." />
+<meta name="keywords" content="gimnasio San Juan, gym Puerto Rico, Physical Gym, entrenamiento personalizado San Juan, pesas, culturismo Puerto Rico, gimnasio cerca de mí" />
+<link rel="canonical" href="https://physicalgym.pr/" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_PR" />
+<meta property="og:site_name" content="Physical Gym" />
+<meta property="og:title" content="Physical Gym San Juan — Donde se forjan campeones" />
+<meta property="og:description" content="Pesas, máquinas y entrenadores que te empujan de verdad. Gimnasio en San Juan, Puerto Rico. 787-765-6561." />
+<meta property="og:image" content="assets/champion.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Physical Gym San Juan — Donde se forjan campeones" />
+<meta name="twitter:description" content="Gimnasio de barrio con mentalidad de tarima en San Juan, Puerto Rico." />
+<meta name="twitter:image" content="assets/champion.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+
+<!-- LocalBusiness structured data for local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "additionalType": "https://schema.org/ExerciseGym",
+  "name": "Physical Gym",
+  "description": "Gimnasio en San Juan, Puerto Rico. Pesas, máquinas, entrenamiento personalizado y suplementos.",
+  "telephone": "+1-787-765-6561",
+  "url": "https://physicalgym.pr/",
+  "image": "https://physicalgym.pr/assets/storefront.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Juan",
+    "addressRegion": "PR",
+    "addressCountry": "US"
+  },
+  "areaServed": "San Juan, Puerto Rico",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:00", "closes": "22:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "06:00", "closes": "20:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "07:00", "closes": "14:00"}
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --black:#0a0a0a; --ink:#111110; --panel:#141312; --line:#26241f;
+    --yellow:#ffd400; --yellow-deep:#e6b800; --white:#f4f1ea; --muted:#a29d90;
+    --font-display:'Anton',sans-serif;
+    --font-head:'Oswald',sans-serif;
+    --font-cond:'Barlow Condensed',sans-serif;
+    --font-body:'Barlow',system-ui,sans-serif;
+    --max:1240px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--black); color:var(--white); font-family:var(--font-body);
+    font-size:17px; line-height:1.6; overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* grain + concrete texture overlay */
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:1; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .yellow{color:var(--yellow)}
+
+  /* ---- kicker / eyebrow ---- */
+  .kicker{
+    font-family:var(--font-cond); font-weight:700; letter-spacing:.35em; text-transform:uppercase;
+    font-size:.78rem; color:var(--yellow); display:inline-flex; align-items:center; gap:.7em;
+  }
+  .kicker::before{content:"";width:34px;height:2px;background:var(--yellow);display:inline-block}
+
+  h1,h2,h3{font-family:var(--font-display);font-weight:400;text-transform:uppercase;line-height:.92;letter-spacing:.01em}
+
+  /* ================= HEADER ================= */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 24px; transition:background .3s, padding .3s, border-color .3s;
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{background:rgba(10,10,10,.92);backdrop-filter:blur(10px);padding:12px 24px;border-color:var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;font-family:var(--font-display);font-size:1.35rem;letter-spacing:.02em}
+  .brand .mark{
+    width:34px;height:34px;background:var(--yellow);color:var(--black);
+    display:grid;place-items:center;font-size:1.15rem;transform:skewX(-9deg);flex:none;
+  }
+  .brand .mark span{transform:skewX(9deg)}
+  .brand b{color:var(--yellow)}
+  nav.desk{display:flex;gap:30px;align-items:center}
+  nav.desk a{font-family:var(--font-cond);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.9rem;color:var(--white);opacity:.85;transition:opacity .2s,color .2s}
+  nav.desk a:hover{opacity:1;color:var(--yellow)}
+  .cta-phone{
+    font-family:var(--font-cond);font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    background:var(--yellow);color:var(--black);padding:11px 18px;transform:skewX(-9deg);font-size:.9rem;
+    transition:background .2s;
+  }
+  .cta-phone span{display:inline-block;transform:skewX(9deg)}
+  .cta-phone:hover{background:var(--white)}
+  .burger{display:none;background:none;border:0;cursor:pointer;width:44px;height:44px;position:relative;z-index:60}
+  .burger span{position:absolute;left:9px;right:9px;height:3px;background:var(--yellow);transition:.3s;transform-origin:center}
+  .burger span:nth-child(1){top:14px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:28px}
+  body.menu-open .burger span:nth-child(1){top:21px;transform:rotate(45deg)}
+  body.menu-open .burger span:nth-child(2){opacity:0}
+  body.menu-open .burger span:nth-child(3){top:21px;transform:rotate(-45deg)}
+
+  /* mobile drawer */
+  .drawer{
+    position:fixed;inset:0;background:var(--black);z-index:55;display:flex;flex-direction:column;
+    justify-content:center;gap:6px;padding:0 34px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.7,0,.2,1);
+  }
+  body.menu-open .drawer{transform:translateY(0)}
+  .drawer a{font-family:var(--font-display);font-size:2.4rem;text-transform:uppercase;color:var(--white);padding:8px 0;border-bottom:1px solid var(--line)}
+  .drawer a:hover{color:var(--yellow)}
+  .drawer .dphone{margin-top:26px;color:var(--yellow);font-family:var(--font-cond);letter-spacing:.1em;font-size:1.4rem;border:0}
+
+  /* ================= HERO ================= */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero-media{position:absolute;inset:0;z-index:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.25) contrast(1.05) brightness(.62)}
+  .hero-media::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(10,10,10,.55) 0%,rgba(10,10,10,.25) 40%,rgba(10,10,10,.92) 100%);}
+  /* diagonal yellow slash motif */
+  .slash{position:absolute;top:0;bottom:0;left:-6vw;width:44vw;background:var(--yellow);z-index:1;
+    transform:skewX(-9deg);opacity:.10;mix-blend-mode:overlay}
+  .hero-inner{position:relative;z-index:2;width:100%;max-width:var(--max);margin:0 auto;padding:0 24px 8vh}
+  .hero h1{font-size:clamp(3.4rem,12vw,9.5rem);color:var(--white);text-shadow:0 6px 40px rgba(0,0,0,.5)}
+  .hero h1 em{font-style:normal;color:var(--yellow);display:block}
+  .hero p.lede{font-family:var(--font-cond);font-weight:500;font-size:clamp(1.05rem,2.4vw,1.4rem);max-width:44ch;margin:22px 0 30px;color:var(--white)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+  .btn{
+    font-family:var(--font-cond);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:1rem;
+    padding:15px 30px;transform:skewX(-9deg);display:inline-flex;align-items:center;gap:.6em;transition:.2s;
+  }
+  .btn span{transform:skewX(9deg)}
+  .btn-primary{background:var(--yellow);color:var(--black)}
+  .btn-primary:hover{background:var(--white)}
+  .btn-ghost{background:transparent;color:var(--white);border:2px solid var(--white)}
+  .btn-ghost:hover{border-color:var(--yellow);color:var(--yellow)}
+
+  /* ================= STATS ================= */
+  .stats{background:var(--yellow);color:var(--black);position:relative;z-index:3}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:34px 24px;text-align:center;border-right:2px solid rgba(0,0,0,.18)}
+  .stat:last-child{border-right:0}
+  .stat .num{font-family:var(--font-display);font-size:clamp(2.6rem,6vw,4rem);line-height:1}
+  .stat .lbl{font-family:var(--font-cond);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.85rem;margin-top:4px}
+
+  section.blk{padding:clamp(70px,10vw,120px) 0;position:relative;z-index:2}
+  .sec-head{margin-bottom:46px;max-width:60ch}
+  .sec-head h2{font-size:clamp(2.4rem,6.5vw,5rem);margin-top:14px}
+  .sec-head p{color:var(--muted);font-size:1.05rem;margin-top:16px;max-width:52ch}
+
+  /* ---- instalaciones gallery: asymmetric ---- */
+  .gallery{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px}
+  .gallery figure{position:relative;overflow:hidden;background:var(--panel)}
+  .gallery figure.big{grid-row:span 2}
+  .gallery img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15) brightness(.9);transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .4s}
+  .gallery figure:hover img{transform:scale(1.06);filter:grayscale(0) brightness(1)}
+  .gallery figcaption{position:absolute;left:0;bottom:0;font-family:var(--font-cond);font-weight:700;text-transform:uppercase;
+    letter-spacing:.12em;font-size:.82rem;background:var(--yellow);color:var(--black);padding:7px 13px;transform:skewX(-9deg) translateY(0)}
+  .gallery figcaption span{display:inline-block;transform:skewX(9deg)}
+
+  /* ---- servicios ---- */
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .svc .card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--ink));padding:30px 26px;transition:.3s;position:relative;overflow:hidden}
+  .svc .card::after{content:"";position:absolute;top:0;left:0;width:0;height:4px;background:var(--yellow);transition:width .35s}
+  .svc .card:hover{transform:translateY(-6px);border-color:var(--yellow-deep)}
+  .svc .card:hover::after{width:100%}
+  .svc .ico{font-family:var(--font-display);color:var(--yellow);font-size:1.6rem;width:52px;height:52px;display:grid;place-items:center;border:2px solid var(--yellow);transform:skewX(-9deg);margin-bottom:20px}
+  .svc .ico span{transform:skewX(9deg)}
+  .svc h3{font-size:1.5rem;margin-bottom:10px}
+  .svc p{color:var(--muted);font-size:.98rem}
+
+  /* ---- about / champion split ---- */
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch;background:var(--panel);border:1px solid var(--line)}
+  .split .media{position:relative;min-height:440px;overflow:hidden}
+  .split .media img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+  .split .media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(20,19,18,.6))}
+  .split .body{padding:clamp(34px,5vw,60px)}
+  .split .body h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:14px 0 18px}
+  .split .body p{color:var(--muted);margin-bottom:16px}
+  .split .body ul{list-style:none;margin-top:22px;display:grid;gap:12px}
+  .split .body li{font-family:var(--font-cond);font-weight:600;text-transform:uppercase;letter-spacing:.06em;display:flex;gap:12px;align-items:center}
+  .split .body li::before{content:"";width:12px;height:12px;background:var(--yellow);transform:skewX(-9deg);flex:none}
+
+  /* ---- horarios + contacto ---- */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .box{border:1px solid var(--line);background:var(--panel);padding:clamp(28px,4vw,44px)}
+  .hours{display:grid;gap:0}
+  .hours .row{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid var(--line);font-family:var(--font-cond);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+  .hours .row:last-child{border-bottom:0}
+  .hours .row .d{color:var(--white)} .hours .row .t{color:var(--yellow)}
+  .hours .row.closed .t{color:var(--muted)}
+  .contact-line{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .contact-line:last-of-type{border-bottom:0}
+  .contact-line .ci{width:44px;height:44px;flex:none;display:grid;place-items:center;background:var(--yellow);color:var(--black);transform:skewX(-9deg);font-family:var(--font-display)}
+  .contact-line .ci span{transform:skewX(9deg)}
+  .contact-line .ct b{display:block;font-family:var(--font-cond);text-transform:uppercase;letter-spacing:.1em;font-size:.78rem;color:var(--muted)}
+  .contact-line .ct a,.contact-line .ct span.v{font-family:var(--font-head);font-size:1.25rem;color:var(--white)}
+  .contact-line .ct a:hover{color:var(--yellow)}
+
+  /* ---- big CTA band ---- */
+  .cta-band{background:var(--yellow);color:var(--black);text-align:center;padding:clamp(60px,9vw,110px) 24px;position:relative;overflow:hidden}
+  .cta-band h2{font-size:clamp(2.6rem,9vw,7rem)}
+  .cta-band p{font-family:var(--font-cond);font-weight:600;text-transform:uppercase;letter-spacing:.14em;margin:14px 0 30px}
+  .cta-band .btn-primary{background:var(--black);color:var(--yellow)}
+  .cta-band .btn-primary:hover{background:var(--ink)}
+  .cta-band .ghost-dark{background:transparent;border:2px solid var(--black);color:var(--black)}
+  .cta-band .ghost-dark:hover{background:var(--black);color:var(--yellow)}
+
+  footer{background:var(--ink);border-top:1px solid var(--line);padding:56px 0 30px;position:relative;z-index:2}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;align-items:flex-start}
+  footer .brand{font-size:1.5rem;margin-bottom:14px}
+  footer p{color:var(--muted);font-size:.95rem;max-width:34ch}
+  .socials{display:flex;gap:12px;margin-top:16px}
+  .socials a{width:42px;height:42px;border:1px solid var(--line);display:grid;place-items:center;font-family:var(--font-cond);font-weight:700;transition:.2s}
+  .socials a:hover{background:var(--yellow);color:var(--black);border-color:var(--yellow)}
+  .foot-nav{display:grid;gap:10px}
+  .foot-nav a{font-family:var(--font-cond);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .foot-nav a:hover{color:var(--yellow)}
+  .legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  /* ---- reveal on scroll ---- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .hero .reveal{transition-delay:.1s}
+  .hero h1.reveal{transition-delay:.05s}
+  .hero p.reveal{transition-delay:.25s}
+  .hero .hero-cta.reveal{transition-delay:.4s}
+
+  /* ================= RESPONSIVE ================= */
+  @media(max-width:940px){
+    .svc{grid-template-columns:1fr 1fr}
+    .split{grid-template-columns:1fr}
+    .split .media{min-height:320px}
+    .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+    .gallery figure.big{grid-column:span 2;grid-row:auto;height:240px}
+    .two{grid-template-columns:1fr}
+  }
+  @media(max-width:720px){
+    nav.desk,.cta-phone{display:none}
+    .burger{display:block}
+    .stats .grid{grid-template-columns:1fr 1fr}
+    .stat{border-bottom:2px solid rgba(0,0,0,.18)}
+    .stat:nth-child(2){border-right:0}
+    .svc{grid-template-columns:1fr}
+    .hero{align-items:flex-end}
+  }
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<!-- ============ HEADER ============ -->
+<header id="hdr">
+  <a href="#top" class="brand" aria-label="Physical Gym inicio">
+    <span class="mark"><span>P</span></span> PHYSICAL&nbsp;<b>GYM</b>
+  </a>
+  <nav class="desk" aria-label="Principal">
+    <a href="#servicios">Servicios</a>
+    <a href="#instalaciones">Instalaciones</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="cta-phone" href="tel:+17877656561"><span>787&#8209;765&#8209;6561</span></a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="drawer" id="drawer">
+  <a href="#servicios">Servicios</a>
+  <a href="#instalaciones">Instalaciones</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#horarios">Horarios</a>
+  <a href="#contacto">Contacto</a>
+  <a class="dphone" href="tel:+17877656561">787-765-6561</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<main id="top">
+<section class="hero" aria-label="Bienvenida">
+  <div class="hero-media"><img src="assets/storefront.jpg" alt="Fachada de Physical Gym en San Juan, Puerto Rico" fetchpriority="high" /></div>
+  <div class="slash" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <span class="kicker reveal">San Juan · Puerto Rico</span>
+    <h1 class="reveal">Donde se<br><em>forjan campeones</em></h1>
+    <p class="lede reveal">Pesas, máquinas y entrenadores que te empujan de verdad. Un gimnasio de barrio con mentalidad de tarima. Entra, entrena, mejora.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#contacto"><span>Empieza hoy →</span></a>
+      <a class="btn btn-ghost" href="tel:+17877656561"><span>Llámanos</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" aria-label="En números">
+  <div class="grid">
+    <div class="stat"><div class="num">15+</div><div class="lbl">Años forjando</div></div>
+    <div class="stat"><div class="num">6.7K</div><div class="lbl">Miembros</div></div>
+    <div class="stat"><div class="num">5<small style="font-size:.5em">AM</small></div><div class="lbl">Abrimos temprano</div></div>
+    <div class="stat"><div class="num">98%</div><div class="lbl">Vuelven a entrenar</div></div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="blk" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Lo que ofrecemos</span>
+      <h2>Todo para <span class="yellow">levantar</span> tu nivel</h2>
+      <p>Equipo serio, espacio para moverte y gente que sabe. Sin filtros de gimnasio de revista — aquí se viene a trabajar.</p>
+    </div>
+    <div class="svc">
+      <div class="card reveal"><div class="ico"><span>01</span></div><h3>Pesas Libres</h3><p>Barras olímpicas, mancuernas hasta el tope y racks de sobra para peso real.</p></div>
+      <div class="card reveal"><div class="ico"><span>02</span></div><h3>Máquinas</h3><p>Estaciones para cada grupo muscular, incluida prensa de piernas y cable completo.</p></div>
+      <div class="card reveal"><div class="ico"><span>03</span></div><h3>Entrenamiento Personal</h3><p>Entrenadores que corrigen técnica y arman tu plan según tu meta.</p></div>
+      <div class="card reveal"><div class="ico"><span>04</span></div><h3>Área Funcional</h3><p>Espacio abierto para movilidad, acondicionamiento y trabajo de tarima.</p></div>
+      <div class="card reveal"><div class="ico"><span>05</span></div><h3>Suplementos</h3><p>Proteína y suplementación con orientación honesta, no venta a presión.</p></div>
+      <div class="card reveal"><div class="ico"><span>06</span></div><h3>Comunidad</h3><p>Un ambiente de barrio que te empuja: aquí nadie entrena solo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTALACIONES ============ -->
+<section class="blk" id="instalaciones" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Nuestras instalaciones</span>
+      <h2>El terreno de <span class="yellow">juego</span></h2>
+    </div>
+    <div class="gallery reveal">
+      <figure class="big"><img src="assets/maquinas.jpg" alt="Área de máquinas y mancuernas en Physical Gym" loading="lazy" /><figcaption><span>Máquinas y mancuernas</span></figcaption></figure>
+      <figure><img src="assets/prensa.jpg" alt="Prensa de piernas en Physical Gym" loading="lazy" /><figcaption><span>Prensa de piernas</span></figcaption></figure>
+      <figure><img src="assets/interior.jpg" alt="Interior de Physical Gym" loading="lazy" /><figcaption><span>El salón</span></figcaption></figure>
+      <figure style="grid-column:span 2"><img src="assets/storefront.jpg" alt="Fachada de Physical Gym" loading="lazy" /><figcaption><span>Nuestra casa</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS / CHAMPION ============ -->
+<section class="blk" id="nosotros" style="padding-top:0">
+  <div class="wrap">
+    <div class="split reveal">
+      <div class="media"><img src="assets/champion.jpg" alt="Atleta de Physical Gym compitiendo en tarima de culturismo en Puerto Rico" loading="lazy" /></div>
+      <div class="body">
+        <span class="kicker">Más que un gimnasio</span>
+        <h2>Mentalidad de <span class="yellow">tarima</span></h2>
+        <p>Physical Gym nació en el barrio y creció con su gente. No vendemos una foto bonita — formamos atletas que suben a competir y salen con el cinturón.</p>
+        <p>Ya sea tu primer día o tu próxima competencia, aquí encuentras el equipo, los entrenadores y el ambiente para forjarte de verdad.</p>
+        <ul>
+          <li>Entrenadores con experiencia en tarima</li>
+          <li>Planes según tu meta, no genéricos</li>
+          <li>Comunidad que te empuja cada día</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORARIOS + CONTACTO ============ -->
+<section class="blk" id="horarios" style="padding-top:0">
+  <div class="wrap">
+    <div class="two">
+      <div class="box reveal">
+        <span class="kicker">Cuándo abrimos</span>
+        <h2 style="font-size:2rem;margin:14px 0 20px">Horarios</h2>
+        <!-- TODO: confirmar horarios reales con el cliente -->
+        <div class="hours">
+          <div class="row"><span class="d">Lun – Vie</span><span class="t">5:00 AM – 10:00 PM</span></div>
+          <div class="row"><span class="d">Sábado</span><span class="t">6:00 AM – 8:00 PM</span></div>
+          <div class="row"><span class="d">Domingo</span><span class="t">7:00 AM – 2:00 PM</span></div>
+        </div>
+      </div>
+      <div class="box reveal" id="contacto">
+        <span class="kicker">Ven a entrenar</span>
+        <h2 style="font-size:2rem;margin:14px 0 20px">Contacto</h2>
+        <div class="contact-line">
+          <div class="ci"><span>☏</span></div>
+          <div class="ct"><b>Teléfono</b><a href="tel:+17877656561">787-765-6561</a></div>
+        </div>
+        <div class="contact-line">
+          <div class="ci"><span>◉</span></div>
+          <div class="ct"><b>Ubicación</b><span class="v">San Juan, Puerto Rico</span></div>
+        </div>
+        <div class="contact-line">
+          <div class="ci"><span>✆</span></div>
+          <div class="ct"><b>WhatsApp</b><a href="https://wa.me/17877656561" target="_blank" rel="noopener">Escríbenos ahora</a></div>
+        </div>
+        <a class="btn btn-primary" style="margin-top:26px" href="https://maps.google.com/?q=Physical+Gym+San+Juan+Puerto+Rico" target="_blank" rel="noopener"><span>Cómo llegar →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta-band" aria-label="Únete">
+  <div class="wrap">
+    <h2>¿Listo para empezar?</h2>
+    <p>Tu primer día empieza con una llamada</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn btn-primary" href="tel:+17877656561"><span>Llama al 787-765-6561</span></a>
+      <a class="btn ghost-dark" href="https://wa.me/17877656561" target="_blank" rel="noopener"><span>WhatsApp</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand"><span class="mark"><span>P</span></span> PHYSICAL&nbsp;<b>GYM</b></div>
+        <p>Gimnasio de barrio con mentalidad de tarima. San Juan, Puerto Rico. Donde se forjan campeones.</p>
+        <div class="socials" aria-label="Redes sociales">
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">Fb</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Ig</a>
+          <a href="https://wa.me/17877656561" target="_blank" rel="noopener" aria-label="WhatsApp">Wa</a>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Pie de página">
+        <a href="#servicios">Servicios</a>
+        <a href="#instalaciones">Instalaciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div>
+        <span class="kicker">Llámanos</span>
+        <div style="font-family:var(--font-display);font-size:2rem;margin-top:12px"><a href="tel:+17877656561" class="yellow">787-765-6561</a></div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="yr"></span> Physical Gym · San Juan, PR. Todos los derechos reservados.</span>
+      <span>Hecho en Puerto Rico 🇵🇷</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // sticky header state
+  const hdr=document.getElementById('hdr');
+  const onScroll=()=>hdr.classList.toggle('scrolled',window.scrollY>40);
+  onScroll();addEventListener('scroll',onScroll,{passive:true});
+
+  // mobile drawer
+  const burger=document.getElementById('burger');
+  const toggle=(open)=>{document.body.classList.toggle('menu-open',open);burger.setAttribute('aria-expanded',open);burger.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');};
+  burger.addEventListener('click',()=>toggle(!document.body.classList.contains('menu-open')));
+  document.querySelectorAll('.drawer a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+
+  // reveal on scroll
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>io.observe(el));
+  // hero reveals immediately on load
+  addEventListener('load',()=>document.querySelectorAll('.hero .reveal').forEach(el=>el.classList.add('in')));
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
